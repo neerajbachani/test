@@ -12,3 +12,7 @@ app.listen(8000, ()=> {
 app.get('/',(req,res)=>{
     res.send("hello")
 })
+
+app.get('/',(req,res)=> {
+    return res.status(200).send({message: "helo ji", status: true})
+})
